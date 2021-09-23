@@ -1,0 +1,27 @@
+html, header, .intro{
+  height:100%;
+}
+
+.splash {
+  background-color: #222;
+  height:100%;
+}
+
+.main_menu {
+  background-color: #222;
+}
+
+a { 
+  color: inherit; 
+} 
+
+.center-block {
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a:hover{
+  text-decoration: none;
+  color:inherit;
+}
