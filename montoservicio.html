@@ -11,51 +11,38 @@
     </head>
 
 
-    <body class="d-flex align-items-center splash">
+    <body class=" d-flex align-items-center splash">
         <nav class="navbar navbar-expand-lg navbar-light bg-warning fixed-top">
-            <a href="splash.html"><img class="navbar-brand" src="img/Pokémon_Bank_logo.png"style="width:160px;height:94px"></a>
+        <img class="navbar-brand" src="img/Pokémon_Bank_logo.png"style="width:160px;height:94px">
             <ul class="navbar-nav ml-auto">
                 
                 <li class="nav-item">
                     <h2>¡Hola, {usuario}!, {cuenta #}</h2>
-                    <h4 class="nav-link text-dark">Call Center: +(503)2222-4578</h4>
+                    <h2 class="nav-link text-dark">Call Center: +(503)2222-4578</h2>
                 </li>
         </nav>
 
         <div class="mx-auto view" >
-            <div class="display-4 text-center text-light">
-                Ingrese el número de cuenta del servicio:<br>
-                <div class="center-block mt-3">
-                <div class="input-group">
-                    <div class="input-group-prepend">
-            </div>
-            
-                <input type="input" class="form-control-lg text-center ml-2" id="formGroupExampleInput" placeholder="X-XXX-XXXX">
-                <button type="button" class="btn-lg btn-warning ml-2">Borrar</button>
+        <div class="display-4 text-center text-light">
+ 
+            El monto por la factura es de: ${monto}<br>¿Desea continuar?<br><br>
+            <div class="row ">
+                <div class="col">
+                    <div class="input-group" style="display: inline-block;">
+                    <button type="submit" class="btn-lg btn-info" onclick="document.location='resultadopago.html'">Si</button>
+                    <button type="button" class="btn-lg btn-danger" onclick="document.location='index.html'">No</button>
+
                 </div>
+
             </div>
-                
-    
-                <div class="row ">
-                    <div class="col">
-                        <div class="input-group" style="display: inline-block;">
-                        <button type="submit" class="btn-lg btn-info" onclick="document.location='montoservicio.html'">Aceptar</button>
-                        <button type="button" class="btn-lg btn-danger">[x] Cancelar</button>
-    
-                    </div>
-    
                 </div>
-                    </div>
-    
-    
-    
-            
-        </div>
      
-    
-    
-    
-    
+    </div>
+ 
+
+
+
+
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
