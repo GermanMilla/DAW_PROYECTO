@@ -18,3 +18,8 @@ function validar() {
         // document.location='splash.html';
     }
 }
+
+//funcion que nos lleva al splash screen
+function salir(){
+    document.location='splash.html';
+}
