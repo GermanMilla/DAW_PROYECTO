@@ -42,7 +42,7 @@
             <th scope="row">1</th>
             <td>20/11/2021</td>
             <td>Pizza Hut</td>
-            <td>$11.10</td>
+            <td>$50.10</td>
           </tr>
           <tr>
             <th scope="row">2</th>
@@ -95,10 +95,10 @@
     const myChart = new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: ['20/11/2021', '30/11/2021', '15/12/2021'],
+            labels: ['Pizza Hut', 'Pollo Campero', 'Hush Puppies'],
             datasets: [{
-                label: 'Gastos por día',
-                data: [11.10, 41.2, 235.14],
+                label: 'Gastos por categoría',
+                data: [50.10, 131.34, 145],
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
@@ -121,6 +121,8 @@
             }
         }
     });
+
+    
     </script>
 </body>
 

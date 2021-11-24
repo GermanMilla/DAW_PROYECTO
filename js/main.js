@@ -25,3 +25,8 @@ function salir(){
 }
 
 
+function deposito(){
+    var cantidad = document.getElementById("cantidad").value 
+    localStorage.balance = localStorage.balance * 1 + cantidad * 1;
+    console.log(localStorage.balance);
+}
