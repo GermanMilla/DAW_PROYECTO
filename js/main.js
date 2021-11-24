@@ -23,3 +23,5 @@ function validar() {
 function salir(){
     document.location='splash.html';
 }
+
+
