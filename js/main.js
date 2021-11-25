@@ -4,7 +4,6 @@ localStorage.balance = 500;
 localStorage.account = 0987654321;
 
 
-
 document.getElementById("usuario").innerHTML = "Hola, " + localStorage.username + ". Cuenta no. " + localStorage.account;
 document.getElementById("saldo").innerHTML = localStorage.username + ", su saldo es de: $" + localStorage.balance;
 
@@ -29,4 +28,5 @@ function deposito(){
     var cantidad = document.getElementById("cantidad").value 
     localStorage.balance = localStorage.balance * 1 + cantidad * 1;
     console.log(localStorage.balance);
+    document.location='index.html';
 }
