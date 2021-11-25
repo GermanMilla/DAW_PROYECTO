@@ -24,7 +24,7 @@
                 <div class="center-block mt-3">
                     <div class="input-group">
                     <i class="fas fa-hand-holding-usd"></i>
-                        <input type="input" class="form-control-lg text-center ml-2" id="cantidad" placeholder="$0.00">
+                        <input type="input" class="form-control-lg text-center ml-2" id="cantidad" placeholder="$0.00"onkeypress="if ( isNaN(this.value + String.fromCharCode(event.keyCode) )) return false;">
                         <button type="button" class="btn-lg btn-warning ml-2">Borrar</button>
                      </div>
                 </div>

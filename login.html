@@ -21,7 +21,7 @@
             <div class="display-4 text-center text-light">
                 Por favor ingrese su pin:<br>
 
-                <input name="" type="password" class="form-control-lg text-center" id="pin" maxlength="4" pattern="[0-9]{1,4}" title="4 valores numéricos">
+                <input name="" type="password" class="form-control-lg text-center" id="pin" maxlength="4" pattern="[0-9]{1,4}" title="4 valores numéricos" onkeypress="if ( isNaN( String.fromCharCode(event.keyCode) )) return false;">
                 <button type="button" class="btn-lg btn-warning">Borrar</button>
                 <div class="row ">
                     <div class="col">
@@ -46,4 +46,5 @@
     </script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     </body>
+
 </html>
