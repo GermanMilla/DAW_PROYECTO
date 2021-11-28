@@ -33,6 +33,11 @@ function salir(){
     document.location='splash.html';
 }
 
+function cancelar(){
+    document.location='index.html';
+}
+
+//funcion para depositar efectivo
 function deposito(){
     var cantidad = document.getElementById("cantidad").value;
     var balance = localStorage.getItem("balance");
@@ -42,8 +47,13 @@ function deposito(){
     document.location='index.html';
 }
 
-function retiro(){
-    var cantidad = document.getElementById("cantidadretiro").value;
+//funcion para borrar texto
+function borrar(elemento){
+    elemento.value="";
+}
+
+//funcion para retirar efectivo o pagar recibos
+function retiro(cantidad){
     var balance = localStorage.getItem("balance");
     if (parseFloat(balance) -  parseFloat(cantidad) < 0){
         swal("Fondos insuficientes" , "Por favor intente de nuevo","error");
@@ -57,22 +67,35 @@ function retiro(){
 }
 
 function pagoServicio(pago){
+    var tipodeservicio;
     switch(pago){
         case 1:
             pagoselected = 1;
+            tipodeservicio="Energía Eléctrica";
             break;
         case 2:
             pagoselected = 2;
+            tipodeservicio="Telefonía";
             break;
         case 3:
             pagoselected = 3;
+            tipodeservicio="Aguapotable";
             break;
         case 4:
             pagoselected = 4;
+            tipodeservicio="Internet";
             break;
     }
     document.location="cobroservicio.html";
+
 }
+
+function procesarpago(){
+    var monto = document.getElementById("montorecibo").value;
+    retiro(monto);
+    console.log(monto);
+}
+
 
 function inicializarpago(){
     pagoselected = 0;
