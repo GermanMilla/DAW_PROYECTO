@@ -9,6 +9,7 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <script src="https://kit.fontawesome.com/45825ad050.js" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
 </head>
 
 <body class="main_menu">
@@ -24,7 +25,10 @@
 
   <div class="container">
     <div class=" text-light mt-5">
-      <div class="display-4" id="saldo"><br></div>
+      <div class="display-4" id="saldo"><br>
+        <script type="text/javascript">consultarusuario();
+        </script>
+      </div>
       <hr style="border-top: 1px solid white;">
       <canvas id="myChart" width="400" height="400" class="center-block mb-5" style="background-color:white;"></canvas>
       <h3 class="center-block">Historial de transacciones<br></h3>
@@ -86,9 +90,10 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-  <script src="js/main.js"></script>
+
   <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.0/dist/chart.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   <script>
     const ctx = document.getElementById('myChart').getContext('2d');
 
